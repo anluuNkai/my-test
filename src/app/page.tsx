@@ -1,6 +1,10 @@
 "use client";
 import ArtistPages from "@/component/artist-pages";
+import DemoImport from "@/component/demo-import";
 import DiscographyReleasePages from "@/component/discography-release-pages";
+import EasyToUse from "@/component/easy-to-use";
+import FeatureList from "@/component/features-list";
+import SellYourMerch from "@/component/sell-your-merch";
 import TemplateComponent from "@/component/templates";
 import {
   MenuUnfoldOutlined,
@@ -78,7 +82,12 @@ export default function Home() {
       </div>
       <TemplateComponent/>
       <DiscographyReleasePages/>
+      <DemoImport/>
       <ArtistPages/>
+      <EasyToUse/>
+      <SellYourMerch/>
+      <FeatureList/>
+      <img className="md:h-[600px] h-[400px] object-cover w-full" src={"https://s3.cloud.cmctelecom.vn/tinhte2/2019/08/4733782_tinhte-rock-n-roll-history-17.jpg"} alt=""/>
       <Drawer
         width={"50vw"}
         // className="mt-[60px] "

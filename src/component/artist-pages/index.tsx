@@ -6,40 +6,28 @@ const ArtistPages = () => {
 
   const relaseSingalPages = [
     {
-      label: "Info at Right",
+      label: "Default",
       img: IMAGES_DISCOGRAPHY_RELASES.infoAtRight.src,
     },
     {
-      label: "Info at Left",
+      label: "Minimal",
       img: IMAGES_DISCOGRAPHY_RELASES.infoAtLeft.src,
     },
     {
-      label: "Wide Width",
+      label: "Dark",
       img: IMAGES_DISCOGRAPHY_RELASES.wideWidth.src,
     },
     {
-      label: "Custom Header",
+      label: "Standard Custom Layout",
       img: IMAGES_DISCOGRAPHY_RELASES.customHeader.src,
     },
     {
-      label: "Custom Layout",
+      label: "Discography Oriented",
       img: IMAGES_DISCOGRAPHY_RELASES.customLayout.src,
     },
     {
-      label: "Text Oriented",
+      label: "Band Oriented",
       img: IMAGES_DISCOGRAPHY_RELASES.customLayout.src,
-    },
-    {
-      label: "Compact",
-      img: IMAGES_DISCOGRAPHY_RELASES.compact.src,
-    },
-    {
-      label: "Minimal",
-      img: IMAGES_DISCOGRAPHY_RELASES.minimal.src,
-    },
-    {
-      label: "",
-      img: IMAGES_DISCOGRAPHY_RELASES.endMore.src,
     },
   ];
 
@@ -68,18 +56,6 @@ const ArtistPages = () => {
       label: "Metro",
       img: IMAGES_DISCOGRAPHY_RELASES.metro.src,
     },
-    {
-      label: "Filtered",
-      img: IMAGES_DISCOGRAPHY_RELASES.filtered.src,
-    },
-    {
-      label: "Carousel",
-      img: IMAGES_DISCOGRAPHY_RELASES.carousel.src,
-    },
-    {
-      label: "",
-      img: IMAGES_DISCOGRAPHY_RELASES.endMore.src,
-    },
   ];
   const handleGetLast = (label: string) => {
     if (label === "") {
@@ -91,14 +67,14 @@ const ArtistPages = () => {
     <div className="w-full flex flex-col items-center justify-center gap-12">
       <div className="text-center text-[20px] md:text-[25px] uppercase">
         {" "}
-        Discography Release Pages
+        Artist Pages Simple or Custom Layouts
       </div>
       <div className="text-center text-[15px] text-gray-400 w-[90%] md:w-[70%]">
         {" "}
-        Single release pages don’t have to be boring and all the same! You can
-        use a different layout for each release, and use the page builder
-        template system if you want all release pages with the same custom
-        layout.
+        Herion can be used for your record label website. You can create an
+        unlimited number of pages for each artist and choose between simple
+        default layouts, automatically generated from the release, videos and
+        events artist category, or create a custom page. It’s all up-to-you!
       </div>
       <div className="w-[90%] md:w-[70%] border-b border-gray-200">
         <div className="flex justify-center space-x-10 relative">
@@ -110,7 +86,7 @@ const ArtistPages = () => {
                 : "text-gray-600"
             }`}
           >
-            Release Single Pages
+            Artist Single Pages
           </button>
 
           <button
@@ -121,7 +97,7 @@ const ArtistPages = () => {
                 : "text-gray-600"
             }`}
           >
-            Release Listing
+            Artist Listing
           </button>
         </div>
       </div>
