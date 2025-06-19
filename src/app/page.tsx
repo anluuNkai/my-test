@@ -129,14 +129,6 @@ export default function Home() {
           </div>
         </Carousel>
       </div>
-      <Image
-        className="md:h-[600px] h-[400px] object-cover w-full"
-        src="https://s3.cloud.cmctelecom.vn/tinhte2/2019/08/4733782_tinhte-rock-n-roll-history-17.jpg"
-        alt=""
-        width={1920}
-        height={600}
-        unoptimized
-      />
       <TemplateComponent />
       <DiscographyReleasePages />
       <DemoImport />
