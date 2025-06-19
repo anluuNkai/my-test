@@ -65,6 +65,7 @@ const SellYourMerch = () => {
       >
         {listImages.map((_, idx) => (
           <SwiperSlide key={idx}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={_}
               alt=""

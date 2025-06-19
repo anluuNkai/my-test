@@ -11,6 +11,7 @@ const EasyToUse = () => {
     <div className="md:h-[670px] h-[max-content] w-full bg-gray-900 grid grid-cols-1 md:grid-cols-2 gap-8  p-4 justify-center">
       {/* Left Section */}
       <div className="flex flex-col justify-center items-center">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className={`w-full md:h-[420px] w-[360px] object-cover`}
           src={

@@ -109,8 +109,9 @@ const ArtistPages = () => {
                 key={idx}
                 className="flex flex-col gap-7 justify-center items-center transition-all "
               >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  className={`md:w-[350px] w-full md:h-[220px] w-[260px] ${handleGetLast(
+                  className={`md:w-[350px]  md:h-[220px] w-full ${handleGetLast(
                     _?.label
                   )}`}
                   src={_?.img}
@@ -127,8 +128,9 @@ const ArtistPages = () => {
                 key={idx}
                 className="flex flex-col gap-7 justify-center items-center transition-all "
               >
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  className={`md:w-[350px] w-full md:h-[220px] w-[260px] ${handleGetLast(
+                  className={`md:w-[350px] md:h-[220px] w-full ${handleGetLast(
                     _?.label
                   )}`}
                   src={_?.img}

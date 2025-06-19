@@ -8,7 +8,11 @@ import { ConfigProvider, Steps } from "antd";
 import React from "react";
 
 const DemoImport = () => {
-  const steps = [
+  const steps: {
+    icon: React.ReactNode;
+    status: "finish" | "wait" | "process" | "error";
+    title: React.ReactNode;
+  }[] = [
     {
       icon: <CodeSandboxOutlined />,
       status: "finish",

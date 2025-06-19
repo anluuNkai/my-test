@@ -16,6 +16,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 }) => {
   return (
     <div className="bg-white border-[0.5] border-gray-200  p-19 text-center space-y-4 hover:shadow-lg transition-transform duration-200 ease-in-out hover:scale-[1.02]">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={imageUrl} alt={title} className="h-12 mx-auto" />
       <h3 className="text-lg font-semibold ">{title}</h3>
       <p className="text-pink-500 font-mono font-semibold">{subtitle}</p>

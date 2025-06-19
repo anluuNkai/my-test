@@ -7,16 +7,10 @@ import FeatureList from "@/component/features-list";
 import SaveMoney from "@/component/save-money";
 import SellYourMerch from "@/component/sell-your-merch";
 import TemplateComponent from "@/component/templates";
-import {
-  MenuUnfoldOutlined,
-} from "@ant-design/icons";
-import {
-  Carousel,
-  Collapse,
-  CollapseProps,
-  Drawer,
-} from "antd";
+import { MenuUnfoldOutlined } from "@ant-design/icons";
+import { Carousel, Collapse, CollapseProps, Drawer } from "antd";
 import { useState } from "react";
+import Image from "next/image";
 
 const menuLink = [
   "Home",
@@ -51,8 +45,8 @@ export default function Home() {
       <div
         className={`fixed top-[60px] px-5 w-full py-3 flex shadow-lg justify-end z-10 transition-colors duration-300 ${
           typeof window !== "undefined" && typeof document !== "undefined"
-        ? ""
-        : ""
+            ? ""
+            : ""
         }`}
         id="menu-bar"
         style={{
@@ -90,40 +84,78 @@ export default function Home() {
       />
       <div>
         <div className="md:w-[600px] flex flex-col  absolute top-30  md:left-40 left-3 z-20 uppercase text-white">
-          <span className="md:text-[46px] text-[32px]">Dedicated to brands, labels, festivals, music store and more...</span>
+          <span className="md:text-[46px] text-[32px]">
+            Dedicated to brands, labels, festivals, music store and more...
+          </span>
           <p className="md:text-[28px] text-[20px] ">No coding required</p>
-          <div className="px-2 py-4 border-2 inline-block mt-4 w-[200px] text-center">View Demos</div>
+          <div className="px-2 py-4 border-2 inline-block mt-4 w-[200px] text-center">
+            View Demos
+          </div>
         </div>
         <Carousel
           autoplay
           className="absolute top-0 h-[100vh] bg-gray-200 flex items-center justify-center text-center text-2xl"
         >
-          <img
-            src="https://data.webnhiepanh.com/wp-content/uploads/2020/11/21105453/phong-canh-1.jpg"
-            alt=""
-            className="w-full h-[100vh] object-cover"
-          />
-          <img
-            src="https://shopnhiepanh.vn/admin/js/ckfinder/userfiles/images/49227190738_73af5343ee_b.jpg"
-            alt=""
-            className="w-full h-[100vh] object-cover"
-          />
-          <img
-            src="https://gcs.tripi.vn/public-tripi/tripi-feed/img/474527LVO/5557920_cv.jpg"
-            alt=""
-            className="w-full h-[100vh] object-cover"
-          />
+          <div>
+            <Image
+              src="https://data.webnhiepanh.com/wp-content/uploads/2020/11/21105453/phong-canh-1.jpg"
+              alt=""
+              className="w-full h-[100vh] object-cover"
+              width={1920}
+              height={1080}
+              priority
+              unoptimized
+            />
+          </div>
+          <div>
+            <Image
+              src="https://shopnhiepanh.vn/admin/js/ckfinder/userfiles/images/49227190738_73af5343ee_b.jpg"
+              alt=""
+              className="w-full h-[100vh] object-cover"
+              width={1920}
+              height={1080}
+              unoptimized
+            />
+          </div>
+          <div>
+            <Image
+              src="https://gcs.tripi.vn/public-tripi/tripi-feed/img/474527LVO/5557920_cv.jpg"
+              alt=""
+              className="w-full h-[100vh] object-cover"
+              width={1920}
+              height={1080}
+              unoptimized
+            />
+          </div>
         </Carousel>
       </div>
-      <TemplateComponent/>
-      <DiscographyReleasePages/>
-      <DemoImport/>
-      <ArtistPages/>
-      <EasyToUse/>
-      <SellYourMerch/>
-      <FeatureList/>
-      <SaveMoney/>
-      <img className="md:h-[600px] h-[400px] object-cover w-full" src={"https://s3.cloud.cmctelecom.vn/tinhte2/2019/08/4733782_tinhte-rock-n-roll-history-17.jpg"} alt=""/>
+      <Image
+        className="md:h-[600px] h-[400px] object-cover w-full"
+        src="https://s3.cloud.cmctelecom.vn/tinhte2/2019/08/4733782_tinhte-rock-n-roll-history-17.jpg"
+        alt=""
+        width={1920}
+        height={600}
+        unoptimized
+      />
+      <TemplateComponent />
+      <DiscographyReleasePages />
+      <DemoImport />
+      <ArtistPages />
+      <EasyToUse />
+      <SellYourMerch />
+      <FeatureList />
+      <SaveMoney />
+      <Image
+        sizes="(min-hight: 768px) 600px, 400px"
+        className="md:h-[600px] h-[400px] object-cover w-full"
+        src={
+          "https://s3.cloud.cmctelecom.vn/tinhte2/2019/08/4733782_tinhte-rock-n-roll-history-17.jpg"
+        }
+        alt=""
+        width={1920}
+        height={600}
+        unoptimized
+      />
       <Drawer
         width={"50vw"}
         // className="mt-[60px] "

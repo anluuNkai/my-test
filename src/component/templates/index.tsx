@@ -52,6 +52,7 @@ const TemplateComponent = () => {
             key={idx}
             className="flex flex-col gap-7 justify-center items-center transition-all "
           >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               className="md:w-[350px] w-full md:h-[220px] w-[260px] shadow-xl transition-transform duration-200 ease-in-out  hover:-translate-y-1 "
               src={_.img}
