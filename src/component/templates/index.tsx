@@ -1,5 +1,4 @@
 import { IMAGES_TEMPLATES_HOMEPAGE } from "@/utils/img-templates";
-import { Image } from "antd";
 import React from "react";
 
 const TemplateComponent = () => {

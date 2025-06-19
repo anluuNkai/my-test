@@ -1,4 +1,6 @@
 "use client";
+import ArtistPages from "@/component/artist-pages";
+import DiscographyReleasePages from "@/component/discography-release-pages";
 import TemplateComponent from "@/component/templates";
 import {
   MenuUnfoldOutlined,
@@ -75,6 +77,8 @@ export default function Home() {
         </Carousel>
       </div>
       <TemplateComponent/>
+      <DiscographyReleasePages/>
+      <ArtistPages/>
       <Drawer
         width={"50vw"}
         // className="mt-[60px] "
