@@ -92,7 +92,6 @@ const FeatureList = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-[90%] md:w-[85%] mx-auto py-4">
       {featuresList.map((_, index) => (
-        <>
           <div key={index} className="flex flex-col gap-2">
             <div className="text-[34px] text-red-500">{_.icon}</div>
             <div className="font-medium text-[24px] font-sans">{_.label}</div>
@@ -100,7 +99,6 @@ const FeatureList = () => {
               {_.description}
             </div>
           </div>
-        </>
       ))}
     </div>
   );

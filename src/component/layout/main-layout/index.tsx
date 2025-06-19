@@ -7,7 +7,7 @@ interface MainLayoutProps {
 
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen w-screen flex flex-col justify-between">
+    <div className="min-h-screen  flex flex-col justify-between overflow-auto">
       <Navbar />
       <div>{children}</div>
 
